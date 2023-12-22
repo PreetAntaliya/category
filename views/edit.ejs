@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <center>
+        <h3>Edit Task</h3>
+        <form method="post" action="/editTodo" class="idk">
+            <input type="hidden" name="editId"  value="<%= single.id %>"/>
+            <table border="1">
+                <tr>
+                    <td>Task :- </td>
+                    <td><input type="text" class="task-a" name="task" value="<%= single.task %>"></td>
+                </tr>
+                <tr>
+                    <td>Status :- </td>
+                    <td>
+                        <select name="status">
+                            <% st = ["default","pending","running","complete"] %>
+                            <option selected disabled>---status---</option>
+                            <% st.map((item) => { %>
+                                <option <% if(single.status == item) { %> selected <% } %> value="<%= item %>"><%= item %></option>
+                           <% }) %>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" class="add" value="Edit" />
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <center>
+        <h3>ADD Task</h3>
+        <form action="/add" method="post">
+            <table border="1">
+                    <tr>
+                        <td>Task Name</td>
+                        <td><input type="text" class="task-a" id="taskName" name="taskName" placeholder="Enter Task Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>
+                            <select name="taskStatus" id="taskStatus">
+                                <option selected disabled>---status---</option>
+                                <option>default</option>
+                                <option>pending</option>
+                                <option>running</option>
+                                <option>complete</option>
+                            </select>
+                        </td>
+                    </tr>
+            </table>
+            <input type="submit" class="add" value="submit" />
+        </form>
+    </center>
+</body>
+
+</html>

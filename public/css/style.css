@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #faebd7;
+}
+
+h3{
+    font-size: 54px;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 5px solid gray;
+}
+
+
+
+table{
+    width: 70%;
+    text-align: center;
+}
+
+th{
+    padding: 15px;
+    background-color: aquamarine;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+td{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px 10px;
+}
+
+.status-default { background-color: #ddd; }
+.status-pending { background-color: #ffc; }
+.status-running { background-color: #cff; }
+.status-complete { background-color: #dfd; }
+
+.add{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: palegoldenrod;
+    border-radius: 7px;
+}
+.add a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bolder;
+    padding: 16px 25px;
+}
+
+.task-a {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #faebd7;
+}
+.task-a:focus{
+    background: transparent;
+}
+.idk td{
+    padding: 10px;
+}
+
+select{
+    width:  100%;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: #faebd7;
+    border: none;
+    outline: none;
+}

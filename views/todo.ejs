@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <center>
+        <h3>To-Do List</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Srno</th>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+    
+            <% task.map((val,i)=>{i=i+1 %>
+                <tr>
+                    <td><%= i %></td>
+                    <td><%= val.task %></td>
+                    <td class="status-<%= val.status %>"><%= val.status %></td>
+                    <td>
+                        <a href="/editTask?id=<%= val.id %>">Edit</a> ||
+                        <a href="/deleteData?deleteId=<%= val.id %>">Delete</a>
+                    </td>
+                </tr>
+            <% }) %>
+    
+        </table>
+
+        <button class="add"><a href="/add">ADD</a></button>
+    </center>
+</body>
+</html>
